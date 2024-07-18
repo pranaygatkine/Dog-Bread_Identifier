@@ -1,0 +1,176 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Dog Breed Finder</title>
+
+         <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!--Bootstrap plugin-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+        <!--JQuery plugin-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        
+        <!--External CSS-->
+        <link rel="stylesheet" href="style.css">
+
+        <!--External JS-->
+        <script src = "script.js" type = "text/javascript"></script>
+
+        <!--Font Style Plugin-->
+        <link href="https://fonts.googleapis.com/css?family=Cinzel&display=swap" rel="stylesheet">
+
+        <!--JS Plugin-->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </head>
+    <body style="font-family: 'Cinzel', serif; background: black;">
+        <div class="container-fluid">
+           <!-- <img src="https://www.thegardengurus.tv/a2560x1600b.jpg" class="img-fluid" alt="Green Grass" width="100%" style="height: 660px;"> -->
+           <!-- <h2 class="text-uppercase text-center">"the best therapist has fur and four legs"</h2> -->
+            <div class="container">
+                <img src="https://envato-shoebox-0.imgix.net/2f96/171e-ed3b-4085-ba91-5fe04998a759/PPL00845.jpg?auto=compress%2Cformat&mark=https%3A%2F%2Felements-assets.envato.com%2Fstatic%2Fwatermark2.png&w=1000&fit=max&markalign=center%2Cmiddle&markalpha=18&s=b546a00f58d8953798a9bd64dcbc3ff0" class="img-fluid" alt="Dog Background">
+                <div class="row" id="findDog">
+                    <div class="col-5 ml-3" style="height : 100px; margin-top : -250px;" id = "col1">
+                        <label class="text-uppercase text-white">Find Your Perfect Dog Breed</label>
+                        
+                        <!--Select option from Bootstrap-->
+                        <div class="input-group-append">
+                            <div class="input-group-prepend">
+                                <button class="btn btn-outline-secondary" type="button" id="searchBreed">Button</button>
+                            </div>
+                            <select class="custom-select" id="breedSelector" aria-label="Example select with button addon">
+                                <option>Select Your Breed</option>
+                                <option>African</option>
+                                <option>Affenpinscher</option>
+                                <option>Airdale</option>
+                                <option>Akita</option>
+                                <option>Appenzeller</option>
+                                <option>Basenji</option>
+                                <option>Beagle</option>
+                                <option>Bluetick</option>
+                                <option>Borzoi</option>
+                                <option>Bouvier</option>
+                                <option>Brabancon</option>
+                                <option>Boxer</option>
+                                <option>Briard</option>
+                                <option>Bulldog</option>
+                                <option>Bullterrier</option>
+                                <option>Cairn</option>
+                                <option>Cattledog</option>
+                                <option>Chihuahua</option>
+                                <option>Chow</option>
+                                <option>Clumber</option>
+                                <option>Cockapoo</option>
+                                <option>Collie</option>
+                                <option>Coonhound</option>
+                                <option>Corgi</option>
+                                <option>Cotondetulear</option>
+                                <option>Dachshund</option>
+                                <option>Dalmatian</option>
+                                <option>Dane</option>
+                                <option>Deerhound</option>
+                                <option>Dhole</option>
+                                <option>Dingo</option>
+                                <option>Doberman</option>
+                                <option>Elkhound</option>
+                                <option>Eskimo</option>
+                                <option>Frise</option>
+                                <option>Germanshepherd</option>
+                                <option>Groenendael</option>
+                                <option>Husky</option>
+                                <option>Hound</option>
+                                <option>Pinscher</option>
+                                <option>Stbernard</option>
+                                <option>Shihtzu</option>
+                                <option>Labrador</option>
+                                <option>Whippet</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-5 align-self-center">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" id="c1">
+                            </div>
+                            <div class="carousel-item" id="c2">
+                            </div>
+                            <div class="carousel-item" id="c3">
+                            </div>
+                            <div class="carousel-item" id="c4">
+                            </div>
+                            <div class="carousel-item" id="c5">
+                            </div>
+                            <div class="carousel-item" id="c6">
+                            </div>
+                            <div class="carousel-item" id="c7">
+                            </div>
+                            <div class="carousel-item" id="c8">
+                            </div>
+                            <div class="carousel-item" id="c9">
+                            </div>
+                            <div class="carousel-item" id="c10">
+                            </div>                                 
+                        </div>
+                    </div>
+                </div>
+            </div>     
+        </div>
+
+        <script>
+
+            $("document").ready(function(){
+                $("body").hide();
+                $("body").show(3000);
+                $("#findDog").hide(2000);
+                $("#findDog").show(2000);
+            });
+
+            $("#searchBreed").click(function(){
+
+                var errorMsg = "";
+                var count = 0;
+                var dogImages = "";
+                var breed = $("#breedSelector").val();
+                breed = breed.toLowerCase();
+                var xhr = new XMLHttpRequest();
+                xhr.open('GET' , 'https://dog.ceo/api/breed/' + breed + '/images');
+                xhr.send();
+                xhr.onload = function(){
+                    if(xhr.status == 200) {
+                        dogImages = JSON.parse(xhr.response);
+                        display(dogImages);
+                    }else {
+                        if(count == 0) {
+                            errorMsg = JSON.parse(xhr.response);
+                            $("#searchBreed").append("<p style=\"color : red\">" + errorMsg["message"] + "</p>");
+                            count++;
+                        }
+                    }
+                }
+                $("#findDog").hide();
+            });
+
+            var display = function(showImages) {
+
+                var watchImage = "";
+                var imageHTML = ""; 
+               
+                for(var i = 1 ; i <= 10 ; i++) {
+                    watchImage = showImages["message"][i];
+                    imageHTML = "<image src = \"" + watchImage + "\" class = \"img-fluid\" alt = \"MY DOG\" class = \"d-block w-100\" style= \" height: 500px; width: 450px \">";
+                    $("#c"+i).append(imageHTML);
+                }
+            }
+        </script>
+    </body>
+</html>
